@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Space Mono, monospace;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center;
+  color: hsl(228, 45%, 44%);
+}
+
