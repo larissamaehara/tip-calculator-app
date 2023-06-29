@@ -2,7 +2,7 @@
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
-## Cem-vindo! 👋
+## Bem-vindo! 👋
 
 Obrigado por aceitar este desafio de codificação em front-end.
 
