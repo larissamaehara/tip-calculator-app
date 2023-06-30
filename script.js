@@ -1,10 +1,8 @@
-'use strict'
-
 const bill = document.getElementById('bill')
 const people = document.getElementById('numberOfPeople')
-const tips = document.querySelectorAll('.select_grid-box')
-const tipAmount = document.querySelector('.tip_amount')
-const totalAmount = document.querySelector('.total_amount')
+const tips = document.querySelectorAll('.select-grid-box')
+const tipAmount = document.querySelector('.tip-amount')
+const totalAmount = document.querySelector('.total-amount')
 const tipCustom = document.querySelector('.custom')
 const resetButton = document.querySelector('.reset')
 const errorPeople = document.querySelector('.error-people')

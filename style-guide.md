@@ -15,6 +15,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
+- Strong-cyan: hsl(172, 67%, 45%);
 - Very dark cyan: hsl(183, 100%, 15%)
 - Dark grayish cyan: hsl(186, 14%, 43%)
 - Grayish cyan: hsl(184, 14%, 56%)
@@ -26,7 +27,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (form inputs): 24px
+- Font size (form inputs): 24px = 1.5rem
 
 ### Font
 

@@ -9,21 +9,35 @@ body {
     background-color: hsl(185, 41%, 84%);
 }
 
-img {max-width: 100%;}
+img {
+  max-width: 100%;
+}
 
-.attribution { font-size: 11px; text-align: center; color:  hsl(186, 14%, 43%); }
-.attribution a { color:hsl(184, 14%, 56%); }
+.attribution { 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: 400;
+  color:  hsl(186, 14%, 43%);
+}
+
+.attribution a {
+  text-decoration: underline;
+  color:blue;
+  font-weight: 400;
+}
 
 input {
-    font-family: inherit;
+    font-family:'Space Mono', monospace;
     width: 100%;
-    background-color:  hsl(189, 41%, 97%);
+    background-color: hsl(189, 41%, 97%);
     padding: .5em;
     border-radius: 5px;
     border: none;
     text-align: right;
     color: hsl(183, 100%, 15%);
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.25em;
 }
@@ -37,14 +51,14 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.main_container {
+.main-container {
     width: 100vw;
     height: 100vh;
 }
 
-.logo_container {
+.logo-container {
     width: 100%;
-    display: grid;
+    display: flex;
     place-items: center;
 }
 
@@ -52,27 +66,26 @@ input::-webkit-inner-spin-button {
     margin: 2em auto;
 }
 
-.calculator_container {
+.calculator-container {
     padding: 1.5em;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
 }
 
-.input_header {
+.input-header {
     color:  hsl(186, 14%, 43%);
     font-weight: 700;
     margin-bottom: .4em;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
-.number_of_people,
-.select_tip {
+.number-of-people,
+.select-tip {
     margin-top: .5em;
 }
 
 .bill-container,
-.number_of_people-container {
+.number-of-people-container {
     position: relative;
 }
 
@@ -92,6 +105,7 @@ input::-webkit-inner-spin-button {
     font-size: .875rem;
     color: red;
     display: none;
+    outline-color: red;
 }
 
 .dollar-icon {
@@ -99,7 +113,7 @@ input::-webkit-inner-spin-button {
     margin: .7em 0 0 .5em
 }
 
-.select_grid-container {
+.select-grid-container {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -118,17 +132,17 @@ input::-webkit-inner-spin-button {
 .box25 {grid-area: d;}
 .box50 {grid-area: e;}
 
-.select_grid-box {
+.select-grid-box {
     background-color: hsl(183, 100%, 15%);
     border-radius: 5px;
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding: .5em 0;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-.select_grid-box.active {
+.select-grid-box.active {
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
 }
@@ -147,7 +161,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
 }
 
-.second_container {
+.second-container {
     background-color: hsl(183, 100%, 15%);
     border-radius: 15px;
     padding: 1.25em;
@@ -163,17 +177,17 @@ input::-webkit-inner-spin-button {
 
 .thead {
     color: hsl(0, 0%, 100%);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
-.tip_amount {
+.tip-amount {
     color: hsl(172, 67%, 45%);
     font-size: 1.85rem;
     font-weight: 700;
 }
 
-.total_amount {
+.total-amount {
     color: hsl(172, 67%, 45%);
     font-size: 1.85rem;
     font-weight: 700;
@@ -181,7 +195,7 @@ input::-webkit-inner-spin-button {
 
 .tsub {
     color: hsl(184, 14%, 56%);
-    font-size: .85rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-top: .2em;
 }
@@ -210,7 +224,7 @@ input::-webkit-inner-spin-button {
         font-size: 1rem;
     }
 
-    .main_container {
+    .main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -218,11 +232,11 @@ input::-webkit-inner-spin-button {
         gap: 2em;
     }
 
-    .logo_container {
+    .logo-container {
         width: 50%;
     }
 
-    .calculator_container {
+    .calculator-container {
         display: flex;
         width: 50%;
         border-radius: 20px;
@@ -231,19 +245,19 @@ input::-webkit-inner-spin-button {
         gap: 2.5em;
     }
     
-    .first_container {
+    .first-container {
         width: 50%;
         padding-top: 1em;
         padding-left: 1em;
     }
 
-    .second_container {
+    .second-container {
         width: 50%;
         padding: 2em;
         padding-top: 3em;
     }
 
-    .select_grid-container {
+    .select-grid-container {
         grid-template-areas:
         'a b c'
         'd e f';
@@ -252,4 +266,16 @@ input::-webkit-inner-spin-button {
     .reset {
         margin-top: 4.5em;
     }
+}
+
+.attribution {
+  display:block;
+  margin-top: 7rem;
+  text-align: center;
+  color:  hsl(186, 14%, 43%);
+}
+
+.attribution a {
+  text-decoration: underline;
+  color:blue;
 }
