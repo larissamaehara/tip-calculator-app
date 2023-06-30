@@ -23,7 +23,7 @@ Os usuários devem ser capazes de:
 
 ### Captura de tela
 
-![](.images/mySolution.png)
+![](./images/mySolution.png)
 
 ### Links
 
