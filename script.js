@@ -10,15 +10,15 @@ const errorPeople = document.querySelector('.error-people')
 bill.addEventListener('input', billInputFun)
 people.addEventListener('input', peopleInputFun)
 
-// check which tip is active
+// Check which tip is active
 tips.forEach(function (tip) {
   tip.addEventListener('click', handleClick)
 })
 
-// custom tip
+// Custom tip
 tipCustom.addEventListener('input', tipInputFun)
 
-// reset button
+// Reset button
 resetButton.addEventListener('click', resetFun)
 
 bill.value = '0'
@@ -30,13 +30,13 @@ let billValue = 0
 let peopleValue = 1
 let tipValue = 0.15
 
-// bill input function
+// Bill input function
 function billInputFun () {
   billValue = parseFloat(bill.value)
   calculateTip()
 }
 
-// people input function
+// People input function
 function peopleInputFun () {
   peopleValue = parseFloat(people.value)
 
@@ -50,7 +50,7 @@ function peopleInputFun () {
   }
 }
 
-// custom input function
+// Custom input function
 function tipInputFun () {
   tipValue = parseFloat(tipCustom.value / 100)
 
@@ -60,7 +60,7 @@ function tipInputFun () {
   calculateTip()
 }
 
-// tips click handler
+// Tips click handler
 function handleClick (e) {
   tips.forEach(function (tip) {
     tip.classList.remove('active')
@@ -72,7 +72,7 @@ function handleClick (e) {
   calculateTip()
 }
 
-// calculate tip
+// Calculate tip
 function calculateTip () {
   if (peopleValue >= 1) {
     const tipAmt = (billValue * tipValue) / peopleValue
@@ -82,7 +82,7 @@ function calculateTip () {
   }
 }
 
-// reset button function
+// Reset button function
 function resetFun () {
   bill.value = '0'
   billInputFun()
