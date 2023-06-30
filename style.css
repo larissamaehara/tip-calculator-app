@@ -4,11 +4,300 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Space Mono, monospace;
+  font-family: 'Space Mono', monospace;
 }
 
-.attribution { 
-  font-size: 11px; text-align: center;
-  color: hsl(228, 45%, 44%);
+body {
+  background-color:  hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
 }
 
+.logo {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.info {
+  display: flex;
+  gap: 5rem;
+}
+
+.background {
+  width: 55rem;
+  height: 30rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+}
+
+.form-box {
+  padding-top: 2.5rem;
+  margin-left: 2.5rem;
+  position: relative;
+}
+
+label {
+  font-size: 24px;
+  position: absolute;
+  top: 1.5rem;
+}
+
+.input {
+  font-size: 1.5rem;
+  background-color:  hsl(189, 41%, 97%);
+  border: none;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1vh 1.1vw;
+  transition: 0.2s; 
+  flex-grow: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.input::placeholder {
+  text-align: right;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+}
+
+.input:focus {
+  outline: none;
+  border:  0.15rem solid hsl(172, 67%, 45%);
+}
+
+.input-dolar {
+  position: absolute;
+  top: 5.8rem;
+  left: 1.2rem;
+}
+
+.tip-box {
+  position: relative;
+  padding-top: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.button-box {
+  display: grid;
+  grid-template-columns:30% 30% 30%;
+  grid-template-rows: 3rem 3rem;
+  grid-gap: 0.8rem;
+}
+
+.tip-box p { 
+padding-bottom: 1.2rem;
+}
+
+.btn {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  cursor: pointer;  
+}
+
+.btn:hover,
+.btn:focus {
+  background-color:hsl(185, 41%, 84%);
+  color:hsl(183, 100%, 15%); 
+}
+
+.custom {
+  background-color:  hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+}
+
+.custom:focus {
+  outline: none;
+  border: 0.15rem solid hsl(172, 67%, 45%);
+  cursor: pointer; 
+}
+
+.custom::placeholder {
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  cursor: pointer; 
+}
+
+.input-box {
+  position: relative;
+  margin-top: 2rem;
+}
+  
+.people {
+  text-align: right;
+  margin-top: 4rem;
+  Font-size: 24px;
+  background-color:  hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1vh 1.1vw;
+  transition: 0.2s; 
+  }
+
+.people::placeholder {
+  text-align: right;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  cursor: pointer; 
+}
+  
+.people:focus {
+  outline: none;
+  border:  0.15rem solid hsl(172, 67%, 45%);
+  cursor: pointer; 
+}
+  
+span img {
+  position: absolute;
+  top: 5rem;
+  left: 1rem;
+}
+  
+.label-cont {
+  top: 0;
+}
+  
+.error {
+  position: absolute;
+  right: 1rem;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: red;
+  display: none;
+  top: 0; 
+}
+
+.input-container .people .error{
+  border: 2px solid red;
+}
+
+.result {
+  background-color: hsl(183, 100%, 15%);
+  width: 25rem;
+  height: 25rem;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tip-person-value h1 {
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+}
+
+.person-desc p {
+  color:  hsl(184, 14%, 56%);
+  font-size: 10px;
+}
+
+.first-box {
+  display:flex;
+  gap: 8rem;
+  padding-top: 3rem;
+}
+
+.tip-person-value {
+  margin-left: 2rem;
+}
+
+.total {
+  font-size: 24px;
+  color: hsl(185, 41%, 84%)
+}
+
+.second-box {
+  display:flex;
+  gap: 8rem;
+  padding-top: 3rem;
+}
+
+.reset {
+  background-color:hsl(185, 41%, 84%);
+  text-align: center;
+  padding: 1vh 7vw;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6rem;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.reset:hover,
+.reset:focus {
+  background-color: hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+ 
+.attribution {
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center; 
+  color:hsl(183, 100%, 15%);
+  font-weight: 700
+}
+
+.attribution a{
+  text-decoration: underline;
+  color:blue;
+  font-weight: 700;
+} 
+
+@media screen and (max-width: 576px) {
+  .info {
+    display: block;
+  }
+ 
+  .button-box {
+    width: 80%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.5rem 2.5rem 2.5rem; 
+  }
+ 
+  .background {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+    height: 850px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px; 
+  }
+ 
+  .result {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 20rem;
+    display: block;
+  }
+ 
+  .reset {
+    padding: 1.5vh 20vw;
+    margin-bottom: 1rem;
+  }
+}
