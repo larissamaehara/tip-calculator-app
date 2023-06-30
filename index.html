@@ -3,42 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Tip Calculator Spp</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js" DEFER></script>
 </head>
 <body>
 
-  Bill
+  <main class="main-container">
+    <div class="logo-container">
+      <img src="./images/logo.svg" alt="splitter-logo" class="logo">
+    </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <section class="calculator-container">
 
-  Number of People
+      <!--First container-->
+      <div class="first-container">
 
-  Tip Amount
-  / person
+        <!--Bill-->
+        <h2 class="input-header bill-text">Bill</h2>
+        <span class="billcontainer bill-container">
+          <p class="error-bill">Please enter your bill</p>
+          <img src="./images/icon-dollar.svg" alt="dollar-icon" class="dollar-icon">
+          <input type="number" id="bill" placeholder="0">
+        </span>
+        
+        <!--Select tip-->
+        <h2 class="input-header select-tip">Select Tip %</h2>
+        <div class="select-grid-container">
+          <div class="select-grid-box box5" type="button">5%</div>
+          <div class="select-grid-box box10" type="button">10%</div>
+          <div class="select-grid-box box15" type="button">15%</div>
+          <div class="select-grid-box box25" type="button">25%</div>
+          <div class="select-grid-box box50" type="button">50%</div>
+          <input class="select-grid-box custom" type="number" placeholder="Custom">
+        </div>
+        
+        <!--Number of people-->
+        <h2 class="input-header number-of-people">Number of People</h2>
+          <span class="bill-container number-of-people-container">
+            <p class="error-people">Can't be zero</p>
+            <img src="./images/icon-person.svg" alt="person-icon" class="person-icon">
+            <input type="number" id="numberOfPeople" placeholder="0">
+          </span>
 
-  Total
-  / person
+      </div>
 
-  Reset
+      <!--Second container-->
+      <div class="second-container">
+
+        <!--Tip amount/person-->
+        <div class="flex-container">
+          <div class="tip-amount-left">
+            <p class="thead">Tip Amount</p>
+            <p class="tsub">/person</p>
+          </div>
+          <div class="tip-amount">$0.00</div>
+        </div>
+
+        <!--Total/person-->
+        <div class="flex-container">
+          <div class="tip-amount-left">
+            <p class="thead">Total</p>
+            <p class="tsub">/person</p>
+          </div>
+          <div class="total-amount">$0.00</div>
+        </div>
+
+        <button class="reset">RESET</button>
+      </div>
+
+    </section>
+  </main>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/larissamaehara">Larissa</a>.
+    Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <br>
+    Coded by: <a href="https://github.com/larissamaehara">Larissa</a>.
   </div>
+ 
 </body>
 </html>
