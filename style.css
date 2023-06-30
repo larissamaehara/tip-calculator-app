@@ -15,7 +15,6 @@ body {
 }
 
 .logo {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -271,19 +270,25 @@ span img {
   .info {
     display: block;
   }
+
+  .logo{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
  
   .button-box {
-    width: 80%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 2.5rem 2.5rem 2.5rem; 
+    width: 100%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 3rem 3rem 3rem; 
   }
  
   .background {
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 400px;
-    height: 850px;
+    height: 55rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px; 
   }
@@ -291,13 +296,15 @@ span img {
   .result {
     margin-left: auto;
     margin-right: auto;
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 18rem;
     display: block;
   }
  
   .reset {
-    padding: 1.5vh 20vw;
-    margin-bottom: 1rem;
+    justify-content: center;
+    margin-top: 2.2rem;
+    padding: 0.8vh 20vw;
+    margin-bottom: 0rem;
   }
 }
