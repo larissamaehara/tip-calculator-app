@@ -28,7 +28,7 @@ Os usuários devem ser capazes de:
 ### Links
 
 - URL da solução: [tip-calculator-app](https://github.com/larissamaehara/tip-calculator-app)
-- URL do site ao vivo: [tip-calculator-app](https://your-live-site-url.com)
+- URL do site ao vivo: [tip-calculator-app](https://larissamaehara.github.io/tip-calculator-app/)
 
 ## Meu processo
 
