@@ -4,12 +4,12 @@ Esta é uma solução para o  [Tip calculator app challenge on Frontend Mentor](
 
 ## Índice
 
-- [Visão geral](#visão geral)
+- [Visão geral](#visão-geral)
    - [O desafio](#o-desafio)
-   - [Captura de tela](#captura de tela)
+   - [Captura de tela](#captura-de-tela)
    - [Links](#links)
 - [Meu processo](#meu-processo)
-   - [Construído com](#construído com)
+   - [Construído com](#construído-com)
 
 ## Visão geral
 
@@ -23,7 +23,7 @@ Os usuários devem ser capazes de:
 
 ### Captura de tela
 
-![](./images/mySolution.png)
+![](./mySolution.png)
 
 ### Links
 
