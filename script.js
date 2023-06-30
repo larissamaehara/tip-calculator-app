@@ -7,20 +7,6 @@ const tipCustom = document.querySelector('.custom')
 const resetButton = document.querySelector('.reset')
 const errorPeople = document.querySelector('.error-people')
 
-bill.addEventListener('input', billInputFun)
-people.addEventListener('input', peopleInputFun)
-
-// Check which tip is active
-tips.forEach(function (tip) {
-  tip.addEventListener('click', handleClick)
-})
-
-// Custom tip
-tipCustom.addEventListener('input', tipInputFun)
-
-// Reset button
-resetButton.addEventListener('click', resetFun)
-
 bill.value = '0'
 people.value = '1'
 tipAmount.innerHTML = '$' + (0.0).toFixed(2)
@@ -28,16 +14,16 @@ totalAmount.innerHTML = '$' + (0.0).toFixed(2)
 
 let billValue = 0
 let peopleValue = 1
-let tipValue = 0.15
+let tipValue = 0
 
 // Bill input function
-function billInputFun () {
+const billInputFunction = () => {
   billValue = parseFloat(bill.value)
   calculateTip()
 }
 
 // People input function
-function peopleInputFun () {
+const peopleInputFunction = () => {
   peopleValue = parseFloat(people.value)
 
   if (peopleValue < 1) {
@@ -50,8 +36,8 @@ function peopleInputFun () {
   }
 }
 
-// Custom input function
-function tipInputFun () {
+// Custom tip value input function
+const tipInputFunction = () => {
   tipValue = parseFloat(tipCustom.value / 100)
 
   tips.forEach(function (tip) {
@@ -61,10 +47,10 @@ function tipInputFun () {
 }
 
 // Tips click handler
-function handleClick (e) {
+const handleClick = (event) => {
   tips.forEach(function (tip) {
     tip.classList.remove('active')
-    if (e.target.innerHTML === tip.innerHTML) {
+    if (event.target.innerHTML === tip.innerHTML) {
       tip.classList.add('active')
       tipValue = parseFloat(tip.innerHTML) / 100
     }
@@ -73,7 +59,7 @@ function handleClick (e) {
 }
 
 // Calculate tip
-function calculateTip () {
+const calculateTip = () => {
   if (peopleValue >= 1) {
     const tipAmt = (billValue * tipValue) / peopleValue
     const totalAmt = (billValue + tipAmt) / peopleValue
@@ -83,10 +69,24 @@ function calculateTip () {
 }
 
 // Reset button function
-function resetFun () {
+const resetFun = () => {
   bill.value = '0'
-  billInputFun()
+  billInputFunction()
   people.value = '1'
-  peopleInputFun()
+  peopleInputFunction()
   tipCustom.value = ''
 }
+
+bill.addEventListener('input', billInputFunction)
+people.addEventListener('input', peopleInputFunction)
+
+// Check which tip is active
+tips.forEach(function (tip) {
+  tip.addEventListener('click', handleClick)
+})
+
+// Custom tip
+tipCustom.addEventListener('input', tipInputFunction)
+
+// Reset button
+resetButton.addEventListener('click', resetFun)

@@ -108,9 +108,14 @@ input::-webkit-inner-spin-button {
     outline-color: red;
 }
 
-.dollar-icon {
-    position: absolute;
-    margin: .7em 0 0 .5em
+.dollar-icon{
+  position: absolute;
+  margin: 1.5em 0 0 .8em
+}
+
+.person-icon {
+  position: absolute;
+  margin: 1.5em 0 0 .8em
 }
 
 .select-grid-container {
